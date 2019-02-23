@@ -1,0 +1,182 @@
+/*                                                           Typicons                                                    */
+@font-face {
+    font-family: 'typicons';
+    src: url("../fonts/typicons.eot");
+    src: url("../fonts/typicons.eot?#iefix") format('embedded-opentype'),
+        url("typicons.woff") format('woff'),
+        url("../fonts/typicons.ttf") format('truetype'),
+        url("../fonts/typicons.svg#typicons") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Modification des breakpoint de bootstrap pour les rendre conforme à l'excercise */
+$grid-breakpoints: (xs: 351px,
+sm: 767px,
+md: 990px,
+lg: 1199px,
+xl: 1920px);
+
+$container-max-widths: (
+xs: 767px,
+sm: 767,
+md: 990px,
+lg: 1199px,
+xl: 1920px);
+
+.qc-pad {
+    padding: 0 15px 0 15px;
+}
+body {
+    font-family: 'Raleway',sans-serif;
+    line-height: 1.42857143;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*                                                           Header                                                      */
+
+.QC-bg-hearder {
+    background-image: url(../images/bg_header.jpg);
+    padding-bottom: 25%;
+    background-size: cover;
+}
+.qc-inv-bg{
+    background-color: rgba(0, 0, 0, 0)
+}
+/*menu */
+a {
+    text-decoration: none
+}
+/*position et modification du boutton buger */
+.qc-boutton {
+    position: absolute;
+    float: right;
+    right: 8%;
+    top: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+/*remise a 0 des differente couleur sur le boutton du menu*/
+.qc-boutton:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.fa.fa-bars {
+    color: black;
+    display: block;
+
+}
+
+/*personnalisation du menu */
+#Menu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70, 70, 70, 0.83);
+    z-index: 1;
+    list-style-type: none;
+}
+
+#Menu ul {
+    background-color: rgb(66, 66, 68);
+    width: 30%;
+    padding: 0px;
+    height: 100%;
+    box-shadow: rgb(17, 17, 17) -6px 1px 20px 0px inset;
+}
+
+#Menu ul li {
+    padding: 30px;
+    border-top: 1px solid grey;
+    list-style-type: none;
+}
+
+#Menu a {
+    color: white;
+
+}
+/*fin de personalisation du menu */
+
+/*pour rendre le logo simplon un peu plus coopératif */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*                                                   Section Features                                                    */
+
+.typcn {
+    font-size: 100px;
+    text-align: center;
+}
+
+.features h2 {
+    text-align: center;
+
+}
+
+.features p {
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/*                                                   Section About                                                       */
+
+#about {
+    background-image: url(../images/bg_nuage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom
+}
+/*couleur bleu transparent pour les besoin de about */
+#font-qc {
+    background-color: rgba(71, 218, 255, 0.4);
+
+}
+/*changement de la coleur du texte pour about me */
+.qc-about {
+    color: white;
+
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/*                                                   Section Blog                                                        */
+#blog {
+    padding-top: 3.3em;
+}
+
+#blog p {
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+;
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/*                                               Section MediaQuerries                                                   */
+
+@media screen and (min-width: 767px) {
+};
+
+@media screen and (min-width : 990px) {
+};
+
+@media screen and (min-width: 1119px) {
+    /*    definition de la taille du logo simplon pour  990 px*/
+    .logsimplon {
+        width: 15%;
+    }
+/*    ajout d'un padding pour le hearder pour avoir un resulta plus propre*/
+    .QC-bg-hearder {
+    padding-bottom: 5%;
+
+    }
+    #about {
+    max-height: 100%;
+    background-size:auto;
+}
+}

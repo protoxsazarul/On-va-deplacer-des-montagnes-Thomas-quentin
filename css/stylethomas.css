@@ -1,0 +1,274 @@
+/* ==== CSS THOMAS ====*/
+
+/* ELEMENTS "COMMUNS" */
+
+body {
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    padding-right: 0;
+}
+
+h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+h6 {
+    font-size: 1.3em;
+    margin: 1.2em 0;
+}
+
+small {
+    font-size: 1.2em;
+}
+
+/* Retrait du border radius du Jumbotron + 
+    Alignement texte au centre dans ce dernier*/
+
+.jumbotron {
+    border-radius: 0;
+    text-align: center;
+}
+
+/* Largeur des images (général) */
+img {
+    width: 100%;
+}
+
+
+/* ========================================*/
+
+
+/* HISTORY */
+
+/* Background de la section 'history' */
+
+#history {
+    background-image: url("../images/bg_appareil_photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Bloc avec fond bleu de la section 'history' */
+
+.his {
+    background-color: rgba(128, 215, 247, 0.6);
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+}
+
+/* Paramètre de police du bloc bleu*/
+
+.his p.intro {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.his p{color: white;}
+
+p.txt {
+    font-style: italic;
+    color: white;
+    margin: 30px;
+}
+
+.his p {
+    padding: 0;
+    margin: 30px;
+}
+
+
+/*===================================*/
+
+
+/* GALERIE */
+
+/* Taille de police des liens au dessus
+        de la galerie de photos */
+
+#photos a{
+    font-size: 1.3em;
+}
+
+/* Paramètres des images de la galerie */
+
+.photos img{
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    margin: 2px;
+}
+
+/*======================================*/
+
+/* PARTENAIRES */
+
+/* Paramètres des images 
+        de la section 'partenaires' */
+
+#partenaires img{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*========================================*/
+
+
+/* CONTACT */
+
+/* Background de la section 'contact' */
+
+#contact {
+    background-image: url("../images/bg_newsletter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+/* Paramètres de couleur de la police
+    du bloc en bleu pour éviter tout conflit
+        avec le second fichier CSS */
+
+#contact h3, #contact p {
+    color: white;
+}
+
+/* Fond en noir transparant dans la section
+        'contact' */
+
+.mail {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*=======================================*/
+
+/* FOOTER */
+
+/* Couleur de fond du footer */
+
+footer {
+    background-color: #1b262b;
+    padding-bottom: 20px;
+}
+
+/* Paramétrage de couleur des textes du footer */
+footer h3,
+footer p {
+    color: white;
+    padding: 1.2em;
+}
+
+/*=======================================*/
+
+/* Bouton SUBMIT personnalisé */
+
+/* J'ai trouvé un site qui génère des boutons
+    alors j'ai voulu l'essayer */
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+.button {
+    padding: 5px 15px;
+    margin: 3px 4px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    background: #FF4F4F;
+    background: linear-gradient(top, #FF4F4F 0%, #e63636 100%);
+    background: -moz-linear-gradient(top, #FF4F4F 0%, #e63636 100%);
+    background: -webkit-linear-gradient(top, #FF4F4F 0%, #e63636 100%);
+    background: -o-linear-gradient(top, #FF4F4F 0%, #e63636 100%);
+    border: 1px solid #A00000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -o-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.50);
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover,
+.button:hover {
+    background: linear-gradient(top, #ff6969 0%, #FF4F4F 100%);
+    background: -moz-linear-gradient(top, #ff6969 0%, #FF4F4F 100%);
+    background: -webkit-linear-gradient(top, #ff6969 0%, #FF4F4F 100%);
+    background: -o-linear-gradient(top, #ff6969 0%, #FF4F4F 100%);
+}
+
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active,
+.button:active {
+    opacity: 0.8;
+}
+
+button a {
+    color: white;
+    padding-bottom: 30px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+/* ==== ICONS ==== */
+
+/* Paramètre des icones type 'social' 
+        tailles et dispositions */
+
+.social
+{
+    padding-top: 50px;
+    display: inline-block;
+}
+
+span.typcn, i.typcn
+{
+    font-size: 2.1em;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and (min-width: 1199px){
+    #partenaires div{ display: inline-block; }
+    #partenaires div img{ width: 13%; height: 100%; margin: 0 20px;
+    }
+    #contact p{ text-align: left; margin-bottom: 20px; margin-right: 50%; font-size: 25px; }
+    #contact h3{text-align: left; margin-bottom: 15px; margin-right: 50%; font-size: 30px;}
+}
+
+@media screen and (min-width: 767px){
+.photos{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+}
+
+@media screen and (min-width: 1199px){
+.photos{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+}
